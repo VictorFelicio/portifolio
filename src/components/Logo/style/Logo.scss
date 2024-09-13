@@ -1,0 +1,15 @@
+.logo-container {
+  span {
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: aliceblue;
+    letter-spacing: 5px;
+  }
+
+  img {
+    position: relative;
+    right: 25px;
+    top: 2px;
+    z-index: -1;
+  }
+}

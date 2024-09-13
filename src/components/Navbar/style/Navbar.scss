@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  font-size: 20px;
+  color: aliceblue;
+  font-family: 'Kanit', sans-serif;
+}
+
+.nav-connect {
+  display: flex;
+  gap: 10px;
+
+  button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.07);
+    }
+
+    a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+  }
+}
