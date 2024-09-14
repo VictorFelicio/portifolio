@@ -26,10 +26,13 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
-    transition: 0.5s;
+    transition:
+      transform 0.5s,
+      border 0.1s;
 
     &:hover {
-      transform: scale(1.07);
+      transform: scale(1.05);
+      border: 2px solid aliceblue;
     }
 
     a {
