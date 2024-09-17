@@ -2,28 +2,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 170px;
+  padding: 20px 170px;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 20px;
-  font-size: 20px;
-  color: aliceblue;
-  font-family: 'Kanit', sans-serif;
+  gap: 40px;
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: 'Kanit', sans-serif;
+  }
 }
 
 .nav-connect {
   display: flex;
-  gap: 10px;
+  gap: 40px;
 
   button {
     border: none;
     padding: 10px 20px;
     border-radius: 50px;
     align-items: center;
+    letter-spacing: 0.75px;
     justify-content: center;
     background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
     transition:
