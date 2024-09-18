@@ -1,4 +1,4 @@
-import navUnderline from '../../assets/nav_underline.svg';
+import navUnderline from '../../../public/assets/nav_underline.svg';
 import './style/Logo.scss';
 
 export default function Logo() {
