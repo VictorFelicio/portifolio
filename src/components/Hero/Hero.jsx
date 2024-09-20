@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import profile_img from '../../../public/assets/profile_img.jpeg';
+import profile_img from '/assets/profile_img.jpeg';
 import './style/Hero.scss';
 
 export default function Hero() {

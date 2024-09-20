@@ -1,6 +1,6 @@
 import Tech from '../Tech/Tech';
-import theme_pattern from '../../../public/assets/theme_pattern.svg';
-import profile_img_2 from '../../../public/assets/profile_img_2.jpeg';
+import theme_pattern from '/assets/theme_pattern.svg';
+import profile_img_2 from '/assets/profile_img_2.jpeg';
 import { techs } from './techs';
 import { motion } from 'framer-motion';
 import './style/About.scss';

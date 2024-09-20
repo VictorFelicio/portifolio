@@ -33,11 +33,11 @@
     background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
     transition:
       transform 0.5s,
-      border 0.1s;
+      outline 0.1s;
 
     &:hover {
-      transform: scale(1.05);
-      border: 2px solid aliceblue;
+      transform: scale(1.07);
+      outline: 2px solid aliceblue;
     }
 
     a {

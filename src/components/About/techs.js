@@ -1,16 +1,15 @@
-import html from '../../../public/assets/tech/html5.svg';
-import css from '../../../public/assets/tech/css.svg';
-import javascript from '../../../public/assets/tech/javascript.svg';
-import react from '../../../public/assets/tech/react.svg';
-import typescript from '../../../public/assets/tech/typescript.svg';
-import redux from '../../../public/assets/tech/redux.svg';
-import node from '../../../public/assets/tech/nodejs.svg';
-import sass from '../../../public/assets/tech/sass.svg';
-import next from '../../../public/assets/tech/nextjs_logo_dark.svg';
-import aws from '../../../public/assets/tech/aws.svg';
-import java from '../../../public/assets/tech/java.svg';
-import postgre from '../../../public/assets/tech/postgresql.svg';
-import prisma from '../../../public/assets/tech/prisma_dark.svg';
+import html from '/assets/tech/html5.svg';
+import css from '/assets/tech/css.svg';
+import javascript from '/assets/tech/javascript.svg';
+import react from '/assets/tech/react.svg';
+import typescript from '/assets/tech/typescript.svg';
+import redux from '/assets/tech/redux.svg';
+import node from '/assets/tech/nodejs.svg';
+import sass from '/assets/tech/sass.svg';
+import next from '/assets/tech/nextjs_logo_dark.svg';
+import aws from '/assets/tech/aws.svg';
+import postgre from '/assets/tech/postgresql.svg';
+import prisma from '/assets/tech/prisma_dark.svg';
 
 export const techs = [
   { src: html, name: 'HTML' },
@@ -23,7 +22,6 @@ export const techs = [
   { src: typescript, name: 'Typescript' },
   { src: sass, name: 'Sass' },
   { src: aws, name: 'Aws' },
-  { src: java, name: 'Java' },
   { src: postgre, name: 'PostgreSQL' },
-  { src: prisma, name: 'Prisma ORM' },
+  { src: prisma, name: 'Prisma' },
 ];
