@@ -33,10 +33,22 @@ export default function Navbar() {
 
       <div className="nav-connect">
         <button>
-          <a href="">Linkedin</a>
+          <a
+            href="https://www.linkedin.com/in/joaofeliciodev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin
+          </a>
         </button>
         <button>
-          <a href="">Github</a>
+          <a
+            href="https://github.com/VictorFelicio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
         </button>
       </div>
     </motion.nav>

@@ -13,3 +13,22 @@ body {
     rgba(0, 0, 0, 0.9697128851540616) 100%
   );
 }
+/* Estilizando a barra de rolagem no Chrome */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem vertical */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(50, 50, 50, 0.8); /* Cor do fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(54, 54, 54, 0.7); /* Cor da "bolinha" da barra de rolagem */
+  border-radius: 10px; /* Bordas arredondadas na "bolinha" */
+  transition: background 0.3s; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.9); /* Cor da "bolinha" ao passar o mouse */
+}

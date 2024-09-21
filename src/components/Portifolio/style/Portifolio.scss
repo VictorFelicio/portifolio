@@ -35,12 +35,33 @@
   }
 
   .portifolio-cards > * {
-    flex-basis: calc(
-      (100% / 3) - 16px
-    ); /* Divide o espaço em 3 itens por linha, ajustando para o gap */
+    flex-basis: calc((100% / 3) - 16px);
     max-width: calc((100% / 3) - 20px);
+    flex-grow: 0;
   }
-  flex-grow: 0;
+
+  .ver-mais-btn {
+    display: flex;
+    padding: 10px 50px;
+    background-color: transparent;
+    outline: 1px aliceblue solid;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      transform: scale(1.07);
+    }
+  }
 }
 
 .portifolio-card-container {
@@ -76,6 +97,11 @@
     text-align: justify;
     letter-spacing: 0.5px;
     font-weight: 100;
+
+    h1 {
+      font-size: 18px;
+      padding: 5px 0;
+    }
   }
   .links-container {
     display: flex;

@@ -1,33 +1,40 @@
-import portifolio from '/assets/img/portifolio.webp';
-export default function PortifolioCard() {
+/* eslint-disable react/prop-types */
+import { motion } from 'framer-motion';
+export default function PortifolioCard({
+  thumbnail,
+  title,
+  description,
+  linkRepo,
+  linkDemo,
+  index,
+}) {
+  const delay = 1 + index * 0.1;
   return (
-    <div className="portifolio-card-container">
+    <motion.div
+      className="portifolio-card-container"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 1.5,
+        ease: 'easeOut',
+        delay: delay,
+      }}
+    >
       <div className="thumbnail-container">
-        <img src={portifolio} alt="" />
+        <img src={thumbnail} alt="" />
       </div>
       <div className="description-container">
-        <h1>Portifolio</h1>
-        <span>
-          Nesse projeto desenvolvi meu portifolio para centralizar os itens
-          desenvolvidos ao longo dos estudos
-        </span>
+        <h1>{title}</h1>
+        <span>{description}</span>
       </div>
       <div className="links-container">
-        <a
-          href="https://github.com/VictorFelicio/portifolio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={linkRepo} target="_blank" rel="noopener noreferrer">
           Repo
         </a>
-        <a
-          href="https://portifolio-joao-victor-felicio.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={linkDemo} target="_blank" rel="noopener noreferrer">
           Demo
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
