@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import theme_pattern from '/assets/theme_pattern.svg';
 import PortifolioCard from './components/PortifolioCard';
-import './style/Portifolio.scss';
 import { portifolio_data } from './portifolio_data';
 import { useState } from 'react';
+import './style/Portifolio.scss';
 
 export default function Portifolio() {
   const [visibleItens, setVisibleItens] = useState(3);
@@ -32,7 +32,7 @@ export default function Portifolio() {
         {portifolio_data.slice(0, visibleItens).map((data, index) => {
           return (
             <PortifolioCard
-              key={data.title}
+              key={index}
               index={index}
               thumbnail={data.thumbnail}
               title={data.title}

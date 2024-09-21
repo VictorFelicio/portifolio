@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import './style/Navbar.scss';
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
+  const { pathname } = useLocation();
+
   return (
     <motion.nav
       className="navbar"
@@ -15,19 +17,33 @@ export default function Navbar() {
 
       <ul className="nav-menu">
         <li>
-          <Link to={'/'}>Home</Link>
+          <Link className={pathname === '/' ? 'active' : ''} to={'/'}>
+            Home
+          </Link>
         </li>
         <li>
           {' '}
-          <Link to={'/about'}>Sobre</Link>
+          <Link className={pathname === '/about' ? 'active' : ''} to={'/about'}>
+            Sobre
+          </Link>
         </li>
         <li>
           {' '}
-          <Link to={'/portifolio'}>Portifólio</Link>
+          <Link
+            className={pathname === '/portifolio' ? 'active' : ''}
+            to={'/portifolio'}
+          >
+            Portifólio
+          </Link>
         </li>
         <li>
           {' '}
-          <Link to={'/contact'}>Contato</Link>
+          <Link
+            className={pathname === '/contact' ? 'active' : ''}
+            to={'/contact'}
+          >
+            Contato
+          </Link>
         </li>
       </ul>
 

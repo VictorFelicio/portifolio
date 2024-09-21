@@ -1,0 +1,64 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-family: 'Kanit', sans-serif;
+
+  .contact-title {
+    position: relative;
+    margin-bottom: 25px;
+
+    h3 {
+      padding: 0px 30px;
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    img {
+      position: absolute;
+      bottom: 15px;
+      right: 5px;
+      height: 20px;
+      z-index: -1;
+    }
+  }
+}
+
+.contact-methods {
+  display: flex;
+  gap: 30px;
+
+  .methods-title {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 16px;
+      background: linear-gradient(270deg, #b923e1 0.36%, #da7c25 102.06%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 200;
+      margin-bottom: 16px;
+    }
+  }
+
+  .icon-detail {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+.emails-methods {
+  .email-contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+}

@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   list-style: none;
+  gap: 15px;
 
   a {
     display: inline-block;
@@ -24,7 +25,13 @@
   }
 
   a:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(193, 19, 181, 0.438);
+    border-radius: 8px;
+    transform: scale(1.07);
+  }
+
+  .active {
+    box-shadow: 0 0 15px rgba(193, 19, 181, 0.438);
     border-radius: 8px;
     transform: scale(1.07);
   }
