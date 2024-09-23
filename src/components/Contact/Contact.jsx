@@ -60,7 +60,11 @@ export default function Contact() {
             <label htmlFor="">Seu Email</label>
             <input type="email" name="email" placeholder="Seu email" />
             <label htmlFor="">Escreve sua mensagem</label>
-            <textarea type="" name="name" placeholder="Escreva sua mensagem" />
+            <textarea
+              type=""
+              name="content"
+              placeholder="Escreva sua mensagem"
+            />
             <button className="btn-submit" type="submit">
               Enviar
             </button>

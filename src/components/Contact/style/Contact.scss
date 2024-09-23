@@ -60,5 +60,46 @@
     flex-direction: column;
     align-items: start;
     gap: 30px;
+
+    label {
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    input {
+      border: none;
+      width: 500px;
+      height: 48px;
+      padding-left: 20px;
+      border-radius: 4px;
+      background-color: #32323c;
+      color: aliceblue;
+      font-family: 'Kanit', sans-serif;
+      font-size: 20px;
+      transition: box-shadow 0.3s ease;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(235, 155, 230, 0.568);
+      }
+    }
+
+    textarea {
+      background-color: #32323c;
+      color: aliceblue;
+      font-family: 'Kanit', sans-serif;
+      border: none;
+      border-radius: 4px;
+      font-size: 20px;
+      padding-left: 20px;
+      transition: box-shadow 0.3s ease;
+      width: 500px;
+      height: 400px;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(235, 155, 230, 0.568);
+      }
+    }
   }
 }
