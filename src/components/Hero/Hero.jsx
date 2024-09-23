@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import profile_img from '/assets/profile_img.jpeg';
+import cv_pdf from '/assets/pdf/JoãoVictorFelicio_Curriculo.pdf';
 import './style/Hero.scss';
 
 export default function Hero() {
@@ -49,7 +50,7 @@ export default function Hero() {
         <div className="hero-resume">
           <button
             onClick={() => {
-              window.open('https://youtube.com.br', '_blank');
+              window.open(cv_pdf, '_blank');
             }}
           >
             Visualizar CV
