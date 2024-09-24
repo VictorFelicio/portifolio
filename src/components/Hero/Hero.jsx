@@ -24,14 +24,14 @@ export default function Hero() {
           alt="foto de perfil do criador do conteúdo"
         />
       </motion.div>
-      <motion.h2
+      <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: 'easeOut', delay: 0.4 }}
       >
         <span>Olá! João Victor Felicio, </span>
         Desenvolvedor Frontend, São Paulo, Brasil!
-      </motion.h2>
+      </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}

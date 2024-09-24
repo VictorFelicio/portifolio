@@ -1,8 +1,10 @@
+@import '../../../variables';
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 170px;
+  padding: 20px 0;
+  width: 100%;
 }
 
 .nav-menu {
@@ -14,9 +16,9 @@
   a {
     display: inline-block;
     text-decoration: none;
-    font-size: 20px;
-    color: aliceblue;
-    font-family: 'Kanit', sans-serif;
+    font-size: $font-size-lg;
+    color: $font-color-primary;
+    font-family: $font-family-base;
     padding: 8px 40px;
 
     transition:
@@ -25,13 +27,13 @@
   }
 
   a:hover {
-    box-shadow: 0 0 15px rgba(193, 19, 181, 0.438);
+    box-shadow: $box-shadow-hover-navbar-links;
     border-radius: 8px;
     transform: scale(1.07);
   }
 
   .active {
-    box-shadow: 0 0 15px rgba(193, 19, 181, 0.438);
+    box-shadow: $box-shadow-hover-navbar-links;
     border-radius: 8px;
     transform: scale(1.07);
   }
@@ -43,24 +45,25 @@
 
   button {
     border: none;
+    font-size: $font-size-sm;
     padding: 10px 20px;
     border-radius: 8px;
     align-items: center;
     letter-spacing: 0.75px;
     justify-content: center;
-    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    background: $bg-color-gradiente;
     transition:
       transform 0.5s,
       outline 0.1s;
 
     &:hover {
       transform: scale(1.07);
-      box-shadow: 0 0 15px rgba(235, 155, 230, 0.568);
+      box-shadow: $box-shadow-hover-navbar-btn;
     }
 
     a {
       text-decoration: none;
-      color: aliceblue;
+      color: $font-color-primary;
     }
   }
 }
