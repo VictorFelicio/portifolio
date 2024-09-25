@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 2rem 4px;
   width: 100%;
 }
 
@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 15px;
+  gap: 1.5rem;
 
   a {
     display: inline-block;
@@ -19,7 +19,7 @@
     font-size: $font-size-lg;
     color: $font-color-primary;
     font-family: $font-family-base;
-    padding: 8px 40px;
+    padding: 0.8rem 4rem;
 
     transition:
       box-shadow 0.3s ease,
@@ -28,26 +28,26 @@
 
   a:hover {
     box-shadow: $box-shadow-hover-navbar-links;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     transform: scale(1.07);
   }
 
   .active {
     box-shadow: $box-shadow-hover-navbar-links;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     transform: scale(1.07);
   }
 }
 
 .nav-connect {
   display: flex;
-  gap: 40px;
+  gap: 4rem;
 
   button {
     border: none;
     font-size: $font-size-sm;
-    padding: 10px 20px;
-    border-radius: 8px;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
     align-items: center;
     letter-spacing: 0.75px;
     justify-content: center;

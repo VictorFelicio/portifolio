@@ -1,18 +1,20 @@
+@import '../../../variables';
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: aliceblue;
-  font-family: 'Kanit', sans-serif;
+  width: 100%;
+  color: $font-color-primary;
+  font-family: $font-family-base;
 
   .contact-title {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
 
-    h3 {
-      padding: 0px 30px;
-      font-size: 40px;
+    h1 {
+      padding: 0 3rem;
+      font-size: $font-size-title;
       font-weight: 600;
     }
 
@@ -28,20 +30,20 @@
 
 .contact-methods {
   display: flex;
-  gap: 30px;
+  gap: 3rem;
 
   .methods-title {
-    h1 {
-      font-size: 30px;
-      margin-bottom: 16px;
-      background: linear-gradient(270deg, #b923e1 0.36%, #da7c25 102.06%);
+    h2 {
+      font-size: $font-size-title;
+      margin-bottom: 1.6rem;
+      background: $bg-color-gradiente-span;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     p {
-      font-size: 16px;
+      font-size: $font-size-base;
       font-weight: 200;
       margin-bottom: 16px;
     }
@@ -49,8 +51,12 @@
 
   .icon-detail {
     display: flex;
-    gap: 8px;
+    gap: 0.8rem;
     margin-bottom: 16px;
+
+    p {
+      font-size: $font-size-base;
+    }
   }
 }
 
@@ -59,23 +65,23 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 30px;
+    gap: 1.5rem;
 
     label {
-      font-size: 22px;
+      font-size: $font-size-lg;
       font-weight: 500;
     }
 
     input {
       border: none;
-      width: 500px;
-      height: 48px;
-      padding-left: 20px;
+      width: 100%;
+      height: 3rem;
+      padding: 20px;
       border-radius: 4px;
       background-color: #32323c;
-      color: aliceblue;
-      font-family: 'Kanit', sans-serif;
-      font-size: 20px;
+      color: $font-color-primary;
+      font-family: $font-family-base;
+      font-size: $font-size-lg;
       transition: box-shadow 0.3s ease;
       letter-spacing: 0.95px;
       font-weight: 200;
@@ -88,14 +94,14 @@
 
     textarea {
       background-color: #32323c;
-      color: aliceblue;
-      font-family: 'Kanit', sans-serif;
+      color: $font-color-primary;
+      font-family: $font-family-base;
       border: none;
       border-radius: 4px;
-      font-size: 20px;
-      padding-left: 20px;
+      font-size: $font-size-lg;
+      padding: 20px;
       transition: box-shadow 0.3s ease;
-      width: 500px;
+      width: 40vw;
       height: 200px;
       letter-spacing: 0.95px;
       font-weight: 200;
@@ -124,7 +130,7 @@
         transform 0.3s ease;
 
       &:hover {
-        box-shadow: 0 0 15px rgba(235, 155, 230, 0.568);
+        box-shadow: $box-shadow-hover-navbar-btn;
         border-radius: 8px;
         transform: scale(1.07);
       }

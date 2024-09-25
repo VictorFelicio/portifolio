@@ -31,6 +31,7 @@ export default function PortifolioCard({
         <a href={linkRepo} target="_blank" rel="noopener noreferrer">
           Repo
         </a>
+
         <a href={linkDemo} target="_blank" rel="noopener noreferrer">
           Demo
         </a>

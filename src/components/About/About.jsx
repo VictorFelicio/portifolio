@@ -20,7 +20,7 @@ export default function About() {
         transition={{ duration: 1.5, ease: 'easeOut', delay: 0.4 }}
         className="about-title"
       >
-        <h3>Sobre</h3>
+        <h1>Sobre</h1>
         <img src={theme_pattern} />
       </motion.div>
       <div className="about-sections">
@@ -52,14 +52,14 @@ export default function About() {
             <span>Node.Js</span>. Certificado <span>AWS Practitioner</span> em
             parceria com a Escola da Nuvem.
           </motion.p>
-          <motion.h3
+          <motion.h2
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, ease: 'easeOut', delay: 0.8 }}
             className="about-techs-title"
           >
             Tecnologias utilizadas
-          </motion.h3>
+          </motion.h2>
           <div className="about-techs">
             {techs.map((tech, index) => {
               const delay = 1 + index * 0.1;

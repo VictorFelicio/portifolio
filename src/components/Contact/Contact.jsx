@@ -28,7 +28,7 @@ export default function Contact() {
         transition={{ duration: 1.5, ease: 'easeOut', delay: 0.4 }}
         className="contact-title"
       >
-        <h3>Contato</h3>
+        <h1>Contato</h1>
         <img src={theme_pattern} />
       </motion.div>
 
@@ -40,7 +40,7 @@ export default function Contact() {
           transition={{ duration: 1.5, ease: 'easeOut', delay: 0.6 }}
         >
           <div className="methods-title">
-            <h1>Vamos conversar !</h1>
+            <h2>Vamos conversar !</h2>
             <p>
               Atualmente, estou disponível para novos trabalhos, voluntariados,
               estágios e freelances!

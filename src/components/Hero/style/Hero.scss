@@ -7,14 +7,14 @@
   flex-direction: column;
   font-family: $font-family-base;
   color: $font-color-primary;
-  gap: 10px;
+  gap: 1rem;
 
   .hero-img-container {
-    width: 240px;
-    height: 240px;
+    width: 24rem;
+    height: 24rem;
     border-radius: 50%;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 5rem;
   }
   .hero-img {
     width: 100%;
@@ -27,11 +27,11 @@
   h1 {
     text-align: center;
     width: 80%;
-    font-size: 50px;
+    font-size: $font-size-xxl;
     font-weight: 600;
 
     span {
-      background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+      background: $bg-color-gradiente-span;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -41,19 +41,19 @@
   p {
     width: 80%;
     text-align: center;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: $font-size-xl;
+    line-height: 4rem;
     font-weight: 100;
   }
 
   .hero-action {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 2rem;
     .hero-resume button {
       border: none;
-      padding: 10px 20px;
-      border-radius: 50px;
+      padding: 1rem 2rem;
+      border-radius: 0.8rem;
       font-weight: 100;
       color: aliceblue;
       align-items: center;
@@ -65,7 +65,7 @@
 
       &:hover {
         transform: scale(1.07);
-        border: 2px solid aliceblue;
+        box-shadow: $box-shadow-hover-navbar-btn;
       }
     }
   }

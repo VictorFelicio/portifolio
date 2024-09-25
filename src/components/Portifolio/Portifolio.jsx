@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-binary-expression */
 import { motion } from 'framer-motion';
 import theme_pattern from '/assets/theme_pattern.svg';
 import PortifolioCard from './components/PortifolioCard';
@@ -25,7 +26,7 @@ export default function Portifolio() {
         transition={{ duration: 1.5, ease: 'easeOut', delay: 0.4 }}
         className="portifolio-title"
       >
-        <h3>Portifólio</h3>
+        <h1>Portifólio</h1>
         <img src={theme_pattern} />
       </motion.div>
       <div className="portifolio-cards">
@@ -43,17 +44,16 @@ export default function Portifolio() {
           );
         })}
       </div>
-
       {portifolio_data.length > 3 && (
         <motion.button
           onClick={loadMoreItens}
           className="ver-mais-btn"
-          initial={{ opacity: 0, y: 700 }}
+          initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.07 }}
           transition={{
-            duration: 1.5,
-            ease: 'easeOut',
-            delay: 0.5,
+            opacity: { duration: 1.5, delay: 2 },
+            y: { duration: 1.5, ease: 'easeOut', delay: 2 },
           }}
         >
           Ver Mais
