@@ -27,13 +27,13 @@
   }
 
   a:hover {
-    box-shadow: $box-shadow-hover-navbar-links;
+    outline: 1px solid aliceblue;
     border-radius: 0.8rem;
     transform: scale(1.07);
   }
 
   .active {
-    box-shadow: $box-shadow-hover-navbar-links;
+    outline: 1px solid aliceblue;
     border-radius: 0.8rem;
     transform: scale(1.07);
   }
