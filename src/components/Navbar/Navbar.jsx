@@ -47,12 +47,20 @@ export default function Navbar() {
           onClick={toggleMenu}
         />
         <li>
-          <Link className={pathname === '/' ? 'active' : ''} to={'/'}>
+          <Link
+            className={pathname === '/' ? 'active' : ''}
+            to={'/'}
+            onClick={() => setMenuOpen(false)}
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link className={pathname === '/about' ? 'active' : ''} to={'/about'}>
+          <Link
+            className={pathname === '/about' ? 'active' : ''}
+            to={'/about'}
+            onClick={() => setMenuOpen(false)}
+          >
             Sobre
           </Link>
         </li>
@@ -60,6 +68,7 @@ export default function Navbar() {
           <Link
             className={pathname === '/portifolio' ? 'active' : ''}
             to={'/portifolio'}
+            onClick={() => setMenuOpen(false)}
           >
             Portifólio
           </Link>
@@ -68,6 +77,7 @@ export default function Navbar() {
           <Link
             className={pathname === '/contact' ? 'active' : ''}
             to={'/contact'}
+            onClick={() => setMenuOpen(false)}
           >
             Contato
           </Link>
