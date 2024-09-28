@@ -9,8 +9,14 @@ import { useState } from 'react';
 export default function Navbar() {
   const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [initialAnimation, setInitialAnimation] = useState(true);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const onAnimationComplete = () => {
+    setInitialAnimation(false);
   };
 
   return (
@@ -19,57 +25,49 @@ export default function Navbar() {
       initial={{ opacity: 0, x: -500 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.5, ease: 'easeOut' }}
+      onAnimationComplete={onAnimationComplete}
     >
       <Logo />
-      <img
-        src={menu_open}
-        alt=""
-        className="nav-menu-open"
-        onClick={toggleMenu}
-      />
+      {!initialAnimation && (
+        <img
+          src={menu_open}
+          alt="Abrir menu"
+          className="nav-menu-open"
+          onClick={toggleMenu}
+        />
+      )}
 
-      <ul className={`nav-menu ${menuOpen ? 'open' : ''}`}>
+      <ul
+        className={`nav-menu ${menuOpen ? 'open' : ''} ${initialAnimation ? 'hidden' : ''}`}
+      >
         <img
           src={menu_close}
-          alt=""
+          alt="Fechar menu"
           className="nav-menu-close"
           onClick={toggleMenu}
         />
         <li>
-          <Link
-            className={pathname === '/' ? 'active' : ''}
-            to={'/'}
-            onClick={() => setMenuOpen(false)}
-          >
+          <Link className={pathname === '/' ? 'active' : ''} to={'/'}>
             Home
           </Link>
         </li>
         <li>
-          {' '}
-          <Link
-            className={pathname === '/about' ? 'active' : ''}
-            to={'/about'}
-            onClick={() => setMenuOpen(false)}
-          >
+          <Link className={pathname === '/about' ? 'active' : ''} to={'/about'}>
             Sobre
           </Link>
         </li>
         <li>
-          {' '}
           <Link
             className={pathname === '/portifolio' ? 'active' : ''}
             to={'/portifolio'}
-            onClick={() => setMenuOpen(false)}
           >
             Portifólio
           </Link>
         </li>
         <li>
-          {' '}
           <Link
             className={pathname === '/contact' ? 'active' : ''}
             to={'/contact'}
-            onClick={() => setMenuOpen(false)}
           >
             Contato
           </Link>
