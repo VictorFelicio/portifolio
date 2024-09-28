@@ -72,6 +72,10 @@
   display: none;
 }
 
+.nav-menu-open {
+  display: none;
+}
+
 @include responsive-to($breakpoint-md) {
   .nav-connect {
     display: none;
