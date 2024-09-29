@@ -70,3 +70,11 @@
     }
   }
 }
+
+@include responsive-to($breakpoint-xsm) {
+  .hero {
+    h1 {
+      font-size: $font-size-title;
+    }
+  }
+}

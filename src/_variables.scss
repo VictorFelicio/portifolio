@@ -20,7 +20,7 @@ $box-shadow-hover-navbar-btn: 0 0 15px rgba(235, 155, 230, 0.568);
 $breakpoint-lg: 1024px;
 $breakpoint-md: 768px;
 $breakpoint-sm: 425px;
-$breakpoint-xsm: 320px;
+$breakpoint-xsm: 376px;
 
 @mixin responsive-to($breakpoint) {
   @media (max-width: $breakpoint) {
