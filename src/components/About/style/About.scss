@@ -87,3 +87,33 @@
     }
   }
 }
+
+@include responsive-to($breakpoint-lg) {
+  .about-container {
+    .about-sections {
+      padding: 0 3rem;
+    }
+  }
+}
+
+@include responsive-to($breakpoint-sm) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+
+    .about-sections {
+      display: flex;
+      flex-direction: column;
+
+      .about-description {
+        .about-techs-title {
+          font-size: $font-size-xl;
+        }
+      }
+    }
+  }
+
+  .about-picture {
+    margin: 0 auto;
+  }
+}
