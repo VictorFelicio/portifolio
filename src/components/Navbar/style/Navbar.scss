@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0.4rem;
+  padding: 2rem 1rem;
   width: 100%;
 }
 
@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 1.5rem;
+  gap: 0.9rem;
 
   a {
     display: inline-block;
@@ -19,7 +19,7 @@
     font-size: $font-size-lg;
     color: $font-color-primary;
     font-family: $font-family-base;
-    padding: 0.8rem 4rem;
+    padding: 0.4rem 4rem;
 
     transition:
       box-shadow 0.3s ease,
@@ -41,7 +41,7 @@
 
 .nav-connect {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
 
   button {
     border: none;
@@ -77,14 +77,17 @@
 }
 
 @include responsive-to($breakpoint-md) {
+  .navbar {
+    padding: 2rem 2rem;
+  }
   .nav-connect {
     display: none;
   }
 
   .nav-menu-open {
     display: block;
-    position: fixed;
-    right: 3rem;
+    position: relative;
+    right: 2rem;
     cursor: pointer;
   }
 

@@ -4,19 +4,27 @@ import './style/Navbar.scss';
 import { motion } from 'framer-motion';
 import menu_open from '/assets/menu_open.svg';
 import menu_close from '/assets/menu_close.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
   const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [initialAnimation, setInitialAnimation] = useState(true);
+  const [showMenuButton, setShowMenuButton] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowMenuButton(window.innerWidth <= 768);
+    };
+    handleResize(); // Executa na montagem inicial.
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  };
-
-  const onAnimationComplete = () => {
-    setInitialAnimation(false);
   };
 
   return (
@@ -25,10 +33,10 @@ export default function Navbar() {
       initial={{ opacity: 0, x: -500 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.5, ease: 'easeOut' }}
-      onAnimationComplete={onAnimationComplete}
     >
       <Logo />
-      {!initialAnimation && (
+
+      {showMenuButton && (
         <img
           src={menu_open}
           alt="Abrir menu"
@@ -37,15 +45,15 @@ export default function Navbar() {
         />
       )}
 
-      <ul
-        className={`nav-menu ${menuOpen ? 'open' : ''} ${initialAnimation ? 'hidden' : ''}`}
-      >
-        <img
-          src={menu_close}
-          alt="Fechar menu"
-          className="nav-menu-close"
-          onClick={toggleMenu}
-        />
+      <ul className={`nav-menu ${menuOpen ? 'open' : ''}`}>
+        {showMenuButton && (
+          <img
+            src={menu_close}
+            alt="Fechar menu"
+            className="nav-menu-close"
+            onClick={toggleMenu}
+          />
+        )}
         <li>
           <Link
             className={pathname === '/' ? 'active' : ''}
