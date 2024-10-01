@@ -61,12 +61,30 @@
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
   }
+  .tags-container {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    gap: 1rem;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .tag {
+      flex: 1 1 auto;
+      background: $bg-color-gradiente-tags;
+      outline: 1px solid aliceblue;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
 }
 
 .portifolio-card-container {
   display: flex;
   width: 30rem;
-  height: 40rem;
+  min-height: 40rem;
   padding: 1.6rem;
   background-color: transparent;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
@@ -81,10 +99,11 @@
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    overflow: hidden;
+    object-fit: cover;
+    margin-top: 1rem;
 
     img {
-      border-radius: 0.5rem;
+      border-radius: 0.8rem;
       max-width: 100%;
     }
   }

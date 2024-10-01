@@ -1,4 +1,3 @@
-/* eslint-disable no-constant-binary-expression */
 import { motion } from 'framer-motion';
 import theme_pattern from '/assets/theme_pattern.svg';
 import PortifolioCard from './components/PortifolioCard';
@@ -40,6 +39,7 @@ export default function Portifolio() {
               description={data.description}
               linkDemo={data.link_demo}
               linkRepo={data.link_repo}
+              tags={data.tags}
             />
           );
         })}

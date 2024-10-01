@@ -7,6 +7,7 @@ export default function PortifolioCard({
   linkRepo,
   linkDemo,
   index,
+  tags,
 }) {
   const delay = 1 + index * 0.1;
   return (
@@ -26,6 +27,13 @@ export default function PortifolioCard({
       <div className="description-container">
         <h1>{title}</h1>
         <span>{description}</span>
+      </div>
+      <div className="tags-container">
+        {tags.map((tag, index) => (
+          <span key={index} className="tag">
+            {tag}
+          </span>
+        ))}
       </div>
       <div className="links-container">
         <a href={linkRepo} target="_blank" rel="noopener noreferrer">
