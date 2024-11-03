@@ -9,6 +9,15 @@ export const portifolio_data = [
     tags: ['#react', '#sass', '#frame-motion', '#react-router-dom'],
   },
   {
+    thumbnail: '/assets/img/hamburgueria.webp',
+    title: 'Hambúrgueria Feliccio',
+    description:
+      'PWA para uma hambúrgueria desenvolvido em React e Styled-Components.',
+    link_repo: 'https://github.com/VictorFelicio/hamburgueria',
+    link_demo: 'https://hamburgueria-kappa-drab.vercel.app/',
+    tags: ['#React', '#Styled-Components', '#Sass'],
+  },
+  {
     thumbnail: '/assets/img/doctorcare.webp',
     title: 'DoctorCare',
     description:
