@@ -127,16 +127,19 @@
   }
   .links-container {
     display: flex;
+    width: 100%;
     gap: 2rem;
     margin-top: 1.6rem;
     a {
+      display: flex;
+      flex: 1;
       cursor: pointer;
       border: none;
       border-radius: 0.4rem;
       align-items: center;
       justify-content: center;
       background: $bg-color-gradiente;
-      padding: 0.8rem 8rem;
+      padding: 0.8rem;
       text-decoration: none;
       color: $font-color-primary;
       font-size: $font-size-sm;
@@ -195,10 +198,7 @@
   }
   .portifolio-card-container {
     .links-container {
-      gap: 5rem;
-      a {
-        padding: 0.8rem 14rem;
-      }
+      gap: 1.5rem;    
     }
   }
 }

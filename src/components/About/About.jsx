@@ -1,6 +1,5 @@
 import Tech from '../Tech/Tech';
 import theme_pattern from '/assets/theme_pattern.svg';
-import profile_img_2 from '/assets/profile_img_2.jpeg';
 import { techs } from './techs';
 import { motion } from 'framer-motion';
 import './style/About.scss';
@@ -24,14 +23,6 @@ export default function About() {
         <img src={theme_pattern} />
       </motion.div>
       <div className="about-sections">
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5, ease: 'easeOut', delay: 0.6 }}
-          className="about-picture"
-        >
-          <img src={profile_img_2} alt="foto do criador do conteudo" />
-        </motion.div>
         <div className="about-description">
           <motion.p
             initial={{ opacity: 0, y: 100 }}

@@ -44,7 +44,7 @@ export default function Portifolio() {
           );
         })}
       </div>
-      {portifolio_data.length > 3 && (
+      {portifolio_data.length > visibleItens && (
         <motion.button
           onClick={loadMoreItens}
           className="ver-mais-btn"

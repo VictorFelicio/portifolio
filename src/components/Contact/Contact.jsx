@@ -6,14 +6,6 @@ import location_icon from '/assets/location_icon.svg';
 import './style/Contact.scss';
 
 export default function Contact() {
-  const onSubmitForm = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-
-    console.log(formData);
-    e.target.reset();
-  };
-
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -61,19 +53,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: 'easeOut', delay: 0.6 }}
-        >
-          <form className="email-contact-form" onSubmit={onSubmitForm}>
-            <label htmlFor="">Seu Nome</label>
-            <input type="text" name="name" placeholder="Seu nome" />
-            <label htmlFor="">Seu Email</label>
-            <input type="email" name="email" placeholder="Seu email" />
-            <label htmlFor="">Escreve sua mensagem</label>
-            <textarea name="content" placeholder="Escreva sua mensagem" />
-            <button className="btn-submit" type="submit">
-              Enviar
-            </button>
-          </form>
-        </motion.div>
+        ></motion.div>
       </motion.div>
     </motion.section>
   );
